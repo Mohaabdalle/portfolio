@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'popppins' ,sans-serif;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 8% 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+
+    transform: scale(1.1);
+}
+
+span{
+    text-shadow: 0 0 25px;
+    color: #ff7200;
+
+}
+
+.nav a{
+    /* font-size: 1.8rem; */
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.nav a:hover, .nav a:active{
+    color: #ff7200;
+    border-bottom: 3px solid ;
+}
+
+.Banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+    gap: 15rem;
+    padding: 30% 5%;
+    /* margin-top: 10%; */
+    background-color: aliceblue;
+}
+
+.Banner{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.Banner h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+}
+
+.Banner h1{
+    font-size: 250%;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.Banner img{
+    position: relative;
+    /* top: 3rem; */
+    width: 20%;
+    height: 30vh;
+    /* border-radius: 50%; */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 25px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.Banner-img img:hover{
+    box-shadow: #ff7200;
+    color: #000;
+}
+
+.Banner p{
+    font-size: 1rem;
+    font-weight: 450;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #000;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px;
+    background-color: #ff7200;
+}
+
+.bio-container{
+    width: 80%;
+    margin: 50px auto;
+    padding: 150px 5%;
+}
+
+.title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.about-contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image{
+    
+}
+
+.image img{
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 30%;
+    height: 50vh;
+    transition: transform 0.3s ease;
+}
+
+image:hover img{
+    transform: scale(1.1);
+}
+
+.content{
+    flex: 1;
+    margin-left: 50%;
+    margin-top: -20%;
+}
+
+.content p{
+    font-size: 17px;
+    line-height: l.6;
+}
+
+.read{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.read:hover{
+    background-color: #ccbb25;
+}
+.skills-container{
+    width: 100%;
+    margin: auto;
+    padding: 200px 5%;
+    background: #3498db3c;
+ }
+ 
+ .Skills-heading{
+     font-size: 40px;
+     text-align: center;
+     margin-top: 10px;
+     position: relative;
+ }
+ .skills-cards{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+     height: 50vh;
+     width: 100%;
+ }
+ 
+ .skills-card{
+     font-size: 38px;
+     /* margin-bottom: 24px; */
+     color: #3498db;
+     border-radius: 6px;
+     padding: 10px 50px;
+     width: calc(30% - 10px);
+     background-color: #8484844d;
+     text-align: center;
+     user-select: none;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ 
+ 
+ }
+ .grid{
+    height: 100vh;
+    padding: 88px 5%;
+    background-color: #177e89;
+}
+
+.grid-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 100px;
+    
+  }
+  
+  .item {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    background-color: #8dc6ff;
+    padding: 30px 2%;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 40vh;
+  }
+    .heading-h1{
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    padding: 50px;
+  }
+
+ .skills-card h2{
+     font-size: 24px;
+     margin-bottom: 10px;
+     padding: 10px 0 7px;
+ }
+ 
+ .skills-card p{
+     font-size: 15px;
+     color: #fff;
+     font-weight: 500;
+     font-style: bold;
+    
+ }
+
+ .contact-continer{
+    width: 80%;
+    
+    margin: 50px auto;
+    padding: 70px 5%;
+    background-color: #8e8e8e;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: 78vh;
+ }
+
+ .contact-continer h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+ }
+
+ form input, form textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #000;
+ }
+
+ form input:focus,form textarea:focus{
+    outline: none;
+    box-shadow: 0 0 5px #000;
+ }
